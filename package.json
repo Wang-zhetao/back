@@ -9,7 +9,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "3.6.5",
+    "core-js": "^3.25.1",
+    "es.error.cause.js": "link:core-js/modules/es.error.cause.js",
     "register-service-worker": "1.7.1",
     "vue": "2.6.11",
     "vue-class-component": "7.2.3",

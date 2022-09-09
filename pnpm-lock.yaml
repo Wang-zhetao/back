@@ -14,7 +14,8 @@ specifiers:
   '@vue/cli-service': 4.1.2
   '@vue/eslint-config-typescript': 7.0.0
   '@vue/test-utils': 1.0.3
-  core-js: 3.6.5
+  core-js: ^3.25.1
+  es.error.cause.js: link:core-js/modules/es.error.cause.js
   eslint: 6.7.2
   eslint-plugin-vue: 6.2.2
   lint-staged: 9.5.0
@@ -33,7 +34,8 @@ specifiers:
   vuex: 3.4.0
 
 dependencies:
-  core-js: 3.6.5
+  core-js: 3.25.1
+  es.error.cause.js: link:core-js/modules/es.error.cause.js
   register-service-worker: 1.7.1
   vue: 2.6.11
   vue-class-component: 7.2.3_vue@2.6.11
@@ -46,7 +48,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 4.18.0_461f3f5acc237afe6b6fa5811587fcec
   '@typescript-eslint/parser': 4.18.0_eslint@6.7.2+typescript@4.1.6
   '@vue/cli-plugin-babel': 4.1.2_ef5b25a761a04a1f9d6ab536b0eff985
-  '@vue/cli-plugin-eslint': 4.5.19_6dc5ad1099d4948335a9bdcb75888369
+  '@vue/cli-plugin-eslint': 4.5.13_6dc5ad1099d4948335a9bdcb75888369
   '@vue/cli-plugin-pwa': 4.1.2_@vue+cli-service@4.1.2
   '@vue/cli-plugin-router': 4.5.19_@vue+cli-service@4.1.2
   '@vue/cli-plugin-typescript': 4.1.2_cd62b0bb63fbd8d0db3a6edfb1e7b088
@@ -1996,8 +1998,8 @@ packages:
       - webpack-command
     dev: true
 
-  /@vue/cli-plugin-eslint/4.5.19_6dc5ad1099d4948335a9bdcb75888369:
-    resolution: {integrity: sha512-53sa4Pu9j5KajesFlj494CcO8vVo3e3nnZ1CCKjGGnrF90id1rUeepcFfz5XjwfEtbJZp2x/NoX/EZE6zCzSFQ==}
+  /@vue/cli-plugin-eslint/4.5.13_6dc5ad1099d4948335a9bdcb75888369:
+    resolution: {integrity: sha512-yc2uXX6aBiy3vEf5TwaueaDqQbdIXIhk0x0KzEtpPo23jBdLkpOSoU5NCgE06g/ZiGAcettpmBSv73Hfp4wHEw==}
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
       eslint: '>= 1.6.0 < 7.0.0'
@@ -3856,13 +3858,6 @@ packages:
   /core-js/3.25.1:
     resolution: {integrity: sha512-sr0FY4lnO1hkQ4gLDr24K0DGnweGO1QwSj5BpfQjpSJPdqWalja4cTps29Y/PJVG/P7FYlPDkH3hO+Tr0CvDgQ==}
     requiresBuild: true
-    dev: true
-
-  /core-js/3.6.5:
-    resolution: {integrity: sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==}
-    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
-    requiresBuild: true
-    dev: false
 
   /core-util-is/1.0.2:
     resolution: {integrity: sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==}
